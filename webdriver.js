@@ -14,7 +14,7 @@ driver.then(() => {
     driver.quit()
     const base64Data = data.replace(/^data:image\/png;base64,/, '')
     fs.writeFile('out.png', base64Data, 'base64', (err) => {
-      if (err) console.log(err)
+      if (err) throw new Error(err)
       diffImage('out.png')
     })
   })
