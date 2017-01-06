@@ -11,7 +11,7 @@ driver.get(argv.url)
 driver.manage().window().setSize(1440, 776)
 driver.then(() => {
   driver.takeScreenshot().then((data) => {
-    driver.close()
+    driver.quit()
     const base64Data = data.replace(/^data:image\/png;base64,/, '')
     fs.writeFile('out.png', base64Data, 'base64', (err) => {
       if (err) console.log(err)
