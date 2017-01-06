@@ -1,0 +1,17 @@
+{
+  "name": "qa-image-diff",
+  "version": "1.0.0",
+  "description": "diffs screenshots from selenium against mockups",
+  "main": "webdriver.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "ben costolo",
+  "license": "MIT",
+  "dependencies": {
+    "chromedriver": "^2.26.1",
+    "image-diff": "^1.6.3",
+    "selenium-webdriver": "^3.0.1",
+    "yargs": "^6.6.0"
+  }
+}
