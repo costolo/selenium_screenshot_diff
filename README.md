@@ -8,4 +8,4 @@ usage
 
 * clone
 * npm install
-* node webdriver.js http://pageyouwanttoscreenshot.com
+* node webdriver.js --url http://pageyouwanttoscreenshot.com
